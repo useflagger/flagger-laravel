@@ -1,0 +1,36 @@
+{
+    "name": "useflagger/flagger-laravel",
+    "description": "Flagger API SDK for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flagger",
+            "email": "hello@useflagger.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "useflagger/flagger-php": "^2.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flagger\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Flagger\\Laravel\\FlaggerServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit"
+        ]
+    }
+}
