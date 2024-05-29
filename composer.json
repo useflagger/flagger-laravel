@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=8.1",
-        "useflagger/flagger-php": "^2.0.0"
+        "useflagger/flagger-php": "^1.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0"
