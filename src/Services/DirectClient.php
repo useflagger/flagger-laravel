@@ -2,8 +2,8 @@
 
 namespace Flagger\Laravel\Services;
 
-use Flagger\Settings\Request\Entities\Context\Context;
-use Flagger\Settings\Response\Entities\Setting;
+use Flagger\Flags\Request\Entities\Context\Context;
+use Flagger\Flags\Response\Entities\Flag;
 use Flagger\Laravel\Contracts\Client;
 
 class DirectClient implements Client {
@@ -39,7 +39,7 @@ class DirectClient implements Client {
         return $this->client->all();
     }
 
-    public function get(string $key) : ?Setting
+    public function get(string $key) : ?Flag
     {
         return $this->client->get($key);
     }
