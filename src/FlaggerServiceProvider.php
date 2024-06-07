@@ -30,7 +30,7 @@ class FlaggerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(\Flagger\Client::class, function($app) {
+        $this->app->singleton(\Flagger\Client::class, function() {
             return new \Flagger\Client(config('flagger'));
         });
     }
